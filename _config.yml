@@ -1,11 +1,11 @@
 # Site settings
-author: Kizito Njoku
-title: 
+author: Kizito Njoku 
+title: Discover Blog
 header-img: img/home-bg.png
 email: nkizito57@gmail.com
-copyright_name: Kizito Njoku
+copyright_name: Kizito Njoku 
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Discover 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  nkizito92
