@@ -5,7 +5,7 @@ date:       2019-11-11 10:57:39 -0500
 permalink:  where_software_development_interest_started
 ---
 
-#### First Blog ever made lol
+## First Blog ever made lol
 
 In middle school I caught a glisp of programming, but the interest started in my college years. I was first introduced to programming in middle school, HTML and CSS. I didn’t quite understand the languages at such an early age, but I indeed loved every moment of it.
 
