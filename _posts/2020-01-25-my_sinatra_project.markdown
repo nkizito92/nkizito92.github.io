@@ -7,7 +7,7 @@ permalink:  my_sinatra_project
 
 ## Graduate's Goals
 
-First and foremost working on this project was a lot of fun. During the process, I've learned many tricks and trades that will be quite useful in the future. The first trick I learned was how to check to see if every code is work without the need for testing.
+Working on this project was a lot of fun. During the process, I've learned many tricks and trades that will be quite useful in the future. The first trick I learned was how to check to see if every code is work without the need for testing.
 Second, was how to bypass some features through a hack sort of. Third, was how to secure your code properly so no outside source can come in from the back door.
 
 While, I was working on this project, I was wondering how I could use a debugger called `pry` to check and see if my line of code is working. Well, the first thought that came to mind was run `rspec` in the terminal. 😂😂 that didn't work because there is no test created in the `spec` file to check specific code. My next thought was maybe in one of my get request I should put `binding.pry` and run `rackup` or `shotgun`  to see if that will work. 🧐 Getting closer, now all I need to do is go to the browser and type the route I place the code `binding.pry` in.
