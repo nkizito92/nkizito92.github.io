@@ -17,9 +17,9 @@ While, I was working on this project, I was wondering how I could use a debugger
 ### I have succeeded!!
 Now that I have discovered how to debug my code everything started to fall in place more efficiently.
 
-## Securing The app
+## Securing The App
 
-There are some hackers out there, so you need to secure your application. Knowing this I have learned how to make it quite a task to hack into my application. If your app involves a user creating accounts and posting new tweets, or in this case "Goals" you need to know how 'session' works. There is a gem called `bcrypt`, this gem is a password hashing function, it's job is to change your created password "Hello_is_my_password" into
+There are some hackers out there, so you need to secure your application. Knowing this I have learned how to make it quite a task to hack into my application. If your app involves a user creating accounts and posting new tweets, or in this case "Goals" you need to know how `session` works. There is a gem called `bcrypt`, this gem is a password hashing function, it's job is to change your created password "Hello_is_my_password" into
 `"$2a$12$HghvcXmaTwzNo6qvTxD9NO6fwRIWpHqieWh3lpkZ5n24UH.Ugpn4O"` yeah you get the picture. There is no way anyone can guess a password to an account if it's that long. Before you can use `bcrypt` tools you'll need to go to your `models` folder and add `has_secure_password` in the file that will hold the values for a user's account. There are other tasks you must do to get 'bcrypt' working. Those are making a file in your `db` folder to create a users table with the columns username and `password_digest`, so you can run `rake db:migrate` in the terminal and create the the database.
 
 ## Hacking and Patching
