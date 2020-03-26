@@ -11,7 +11,7 @@ Let just start by saying this project was pretty fun, all the step I have taken 
 
 ## Building the BackEnd
 
-First step I took was to set the backEnd side of this project up. Just like the previous projects I've worked on, I've done a little brainstorming, and came up with the necessary `has_many` and `belong_to` relationships. Once the models are associated with each other it was time to configurate the `controllers`. When rendering the `action methods` you must use `json` and anything that that's associated with class you must `include` it, because javaScript has its own way of receiving them. See in example below!
+The first, step I took was to set the backEnd side of this project up. Just like the previous projects I've worked on, I've done a little brainstorming, and came up with the necessary `has_many` and `belong_to` relationships. Once the models are associated with each other it was time to configure the `controllers`. When rendering the `action methods` you must use `json` and anything that's associated with the class you must `include` it, because javaScript has its way of receiving them. See the example below!
 
 ```
 class UsersController < ApplicationController
@@ -24,8 +24,8 @@ class UsersController < ApplicationController
 end 
 ```
 
-Not only those steps are necessary, you also need to navigate to the `config/initializers` and open the `cors.rb` file. 
-Inside this file you will need to change the line of code that says `origins "www.example.com"` to `origins  "*"` this will allow your `HTML` file to access the information it will be receiving from javascript. 
+Not only those steps are necessary, but you also need to navigate to the `config/initializers` and open the `cors.rb` file. 
+Inside this file, you will need to change the line of code that says `origins "www.example.com"` to `origins  "*"` this will allow your `HTML` file to access the information it will be receiving from javascript. 
 
 
 ## Building the FrontEnd
@@ -50,13 +50,13 @@ The second step, I approached was to build the FrontEnd side. First I created th
 </html>
 ```
 
-Next step I jumped to was to the file Button.js for `javascript`. I started with building the classes and used the `constructor` to create the `props` that match with `models` attributes, so they can work together. In order to `initialize` in the javascript's `class` you must use the keyword `this` that keyword is also used for other task as well, but it will not be discussed here. See the example below!
+The next step I jumped to was to the file Button.js for `javascript`. I started with building the classes and used the `constructor` to create the `props` that match with the `model's` attributes, so they can work together. To `initialize` in the javascript's `class` you must use the keyword `this` that keyword is used for other tasks as well, but it will not be discussed here. See the example below!
 
 ```
 // This is a JavaScript Class
 
 class Button {
-    static all = []
+##     static all = []
     constructor({ id, name, sound }) {
         this.id = id
         this.name = name
@@ -66,7 +66,7 @@ class Button {
 	}
 ``` 
 
-You are probably wondering what is `static all = []`, if you recall in `ruby` there was a `class variable` we always create, that was `@@all = []` we used this to collect all the instantiated objects, javascript follows that concept. Once all the necessary objects and functions are set it's time to create a javascript class `adapter`. Here is where you will `fetch` for the url you will pass in your `index.js` file like so.
+You are probably wondering what is `static all = []`? If you recall in `ruby` there was a `class variable` we always create, that was `@@all = []` we used this to collect all the instantiated objects, javascript follows that concept. Once all the necessary objects and functions are set it's time to create a javascript class `adapter`. Here is where you will `fetch` for the URL you will pass in your `index.js` file like so.
 
 ```
 class ButtonsAdapter {
@@ -90,4 +90,4 @@ class ButtonsAdapter {
 
 ## Iterating in Index.js
 
-Last, but not least, iterating  through code your index.js file. Remember those classes that were to create instances of an object. Here is where you will be calling for those and giving them specific task. To get started first you need to instance the ObjectsAdapter and give it a url with the code `let obj = new ObjectsAdapter(http://localhost:3000/objects)`. By creating this line of code you have made the ObjectsAdapter `fetch` for the url `http://localhost:3000/objects`. When you call `obj.fetchButtons()` and check your HTML file on the browser you will see buttons objects appear. For there you can create a variable that  uses`querySelector` to get the `document` of these buttons.
+Last, but not least, iterating  through code your index.js file. Remember those classes that were to create instances of an object. Here is where you will be calling for those and giving them specific tasks. To get started first you need to instance the ObjectsAdapter and give it a URL with the code `let obj = new ObjectsAdapter(http://localhost:3000/objects)`. By creating this line of code you have made the ObjectsAdapter `fetch` for the URL `http://localhost:3000/objects`. When you call `obj.fetchButtons()` and check your HTML file on the browser you will see buttons objects appear. For there you can create a variable that  uses`querySelector` to get the `document` of these buttons.
