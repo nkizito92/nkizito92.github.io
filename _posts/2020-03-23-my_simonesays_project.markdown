@@ -6,12 +6,12 @@ permalink:  my_simonesays_project
 ---
 
 
-Let just start by saying this project was pretty fun, all the step I have taken worked pretty well. Taking one step at a time is the best way to approach it. First, create the backend and generate the necessary `rails` class. Second, create the frontEnd, this contains  `HTML`, `CSS`, and `javaScript` files. Last, in the javaScript files make all the necessary `iterations`.
+Let just start by saying this project was pretty fun, all the step I have taken worked pretty well. Taking one step at a time was the best way to approach it. First, create the backend and generate the necessary `rails` class. Second, create the frontEnd, this contains  `HTML`, `CSS`, and `javaScript` files. Last, in the javaScript files make all the necessary `iterations`.
 
 
 ## Building the BackEnd
 
-The first, step I took was to set the backEnd side of this project up. Just like the previous projects I've worked on, I've done a little brainstorming, and came up with the necessary `has_many` and `belong_to` relationships. Once the models are associated with each other it was time to configure the `controllers`. When rendering the `action methods` you must use `json` and anything that's associated with the class you must `include` it, because javaScript has its way of receiving them. See the example below!
+The first, step I took was to set the backEnd side of this project up. Just like the previous projects I've worked on, I've done a little brainstorming, and came up with the necessary `has_many` and `belong_to` relationships. Once the models are associated with each other it was time to configure the `controllers` and set up the `routes` in the `config/routes.rb file`. When rendering the `action methods` you must use `json` and anything that's associated with the class you must `include` it, because javaScript has its way of receiving them. See the example below!
 
 ```
 class UsersController < ApplicationController
@@ -50,7 +50,7 @@ The second step, I approached was to build the FrontEnd side. First I created th
 </html>
 ```
 
-The next step I jumped to was to the file Button.js for `javascript`. I started with building the classes and used the `constructor` to create the `props` that match with the `model's` attributes, so they can work together. To `initialize` in the javascript's `class` you must use the keyword `this` that keyword is used for other tasks as well, but it will not be discussed here. See the example below!
+The next step I jumped to was the file Button.js for `javascript`. I started with building the classes and used the `constructor` to create the `props` that match with the `model's` attributes, so they can work together. To `initialize` in the javascript's `class` you must use the keyword `this`. That keyword is used for other tasks as well, but it will not be discussed here. See the example below!
 
 ```
 // This is a JavaScript Class
