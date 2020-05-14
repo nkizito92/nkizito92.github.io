@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What is fetch()"
-date:       2020-05-14 20:18:23 +0000
+date:       2020-05-14 16:18:24 -0400
 permalink:  what_is_fetch
 ---
 
